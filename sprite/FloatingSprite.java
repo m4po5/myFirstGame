@@ -23,19 +23,19 @@ public class FloatingSprite extends Sprite {
         return velocityY;
     }
 
-    public void accelerateUp(double y){
+    public void accelerateUpBy(double y){
         velocityY += y * -1;
     }
 
-    public void accelerateDown(double y){
+    public void accelerateDownBy(double y){
         velocityY += y;
     }
 
-    public void accelerateLeft(double x){
+    public void accelerateLeftBy(double x){
         velocityX += x * -1;
     }
 
-    public void accelerateRight(double x){
+    public void accelerateRightBy(double x){
         velocityX += x;
     }
 

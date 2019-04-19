@@ -32,8 +32,8 @@ class FloatingSpriteTest {
         FloatingSprite sprite = new FloatingSprite();
         double y = 10;
 
-        sprite.accelerateUp(y);
-        sprite.accelerateUp(y);
+        sprite.accelerateUpBy(y);
+        sprite.accelerateUpBy(y);
 
         assertEquals(y * -2, sprite.getVelocityY());
     }
@@ -43,8 +43,8 @@ class FloatingSpriteTest {
         FloatingSprite sprite = new FloatingSprite();
         double y = 10;
 
-        sprite.accelerateDown(y);
-        sprite.accelerateDown(y);
+        sprite.accelerateDownBy(y);
+        sprite.accelerateDownBy(y);
 
         assertEquals(2*y, sprite.getVelocityY());
     }
@@ -54,8 +54,8 @@ class FloatingSpriteTest {
         FloatingSprite sprite = new FloatingSprite();
         double x = 10;
 
-        sprite.accelerateLeft(x);
-        sprite.accelerateLeft(x);
+        sprite.accelerateLeftBy(x);
+        sprite.accelerateLeftBy(x);
 
         assertEquals(x * -2,sprite.getVelocityX());
     }
@@ -65,8 +65,8 @@ class FloatingSpriteTest {
         FloatingSprite sprite = new FloatingSprite();
         double x = 10;
 
-        sprite.accelerateRight(x);
-        sprite.accelerateRight(x);
+        sprite.accelerateRightBy(x);
+        sprite.accelerateRightBy(x);
 
         assertEquals(2*x,sprite.getVelocityX());
     }
