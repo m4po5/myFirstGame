@@ -32,11 +32,11 @@ public class FloatingSprite extends Sprite {
     }
 
     public void accelerateLeft(double x){
-        velocityX = x * -1;
+        velocityX += x * -1;
     }
 
     public void accelerateRight(double x){
-        velocityX = x;
+        velocityX += x;
     }
 
     public void move(){
